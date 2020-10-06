@@ -1,4 +1,3 @@
-
 const { Command } = require('discord.js-commando')
 const axios = require('axios')
 

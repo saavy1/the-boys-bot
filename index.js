@@ -11,14 +11,15 @@ const client = new CommandoClient({
 client.registry
 	.registerDefaultTypes()
 	.registerGroups([
-		['pirate', 'Basic pirate commands']
+		['pirate', 'Basic pirate commands'],
+		['lmgtfy', 'lmgtfy command']
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands()
 	.registerCommandsIn(path.join(__dirname, 'commands'))
 
 client.once('ready', () => {
-	console.log('Yar! I be ready')
+	console.log('Online')
 	client.user.setActivity('Hunting treasures')
 })
 
