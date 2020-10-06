@@ -20,7 +20,9 @@ client.registry
 
 client.once('ready', () => {
 	console.log('Online')
-	client.user.setActivity('Hunting treasures')
+	client.user.setPresence({
+		activity: {name: 'Hunting treasures | $help'}, status: 'active'
+	})
 })
 
 client.on('error', console.error)
