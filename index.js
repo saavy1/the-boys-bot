@@ -12,7 +12,8 @@ client.registry
 	.registerDefaultTypes()
 	.registerGroups([
 		['pirate', 'Basic pirate commands'],
-		['lmgtfy', 'lmgtfy command']
+		['lmgtfy', 'lmgtfy command'],
+		['test', 'test commands']
 	])
 	.registerDefaultGroups()
 	.registerDefaultCommands()
