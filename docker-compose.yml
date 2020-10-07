@@ -1,8 +1,6 @@
 version: "3.3"
 services:
     theboysbot:
-        depends_on: 
-            - watchtower
         build:
             context: .
             dockerfile: Dockerfile
@@ -13,13 +11,6 @@ services:
         volumes:
             - .:/home/node/theboysbot
             - node_modules:/home/node/theboysbot/node_modules
-    watchtower:
-        command: --label-enable --cleanup --interval 300
-        image: containrrr/watchtower
-        network_mode: none
-        restart: always
-        volumes:
-            - /var/run/docker.sock:/var/run/docker.sock
 
 volumes:
     node_modules:
