@@ -12,6 +12,6 @@ module.exports = class TestCommand extends Command {
     }
 
     run(msg) {
-        msg.say('I am working!');
+        msg.say('I am still working!');
     }
 }
