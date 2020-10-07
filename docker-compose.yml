@@ -1,0 +1,16 @@
+version: "3.3"
+services:
+    theboysbot:
+        build:
+            context: .
+            dockerfile: Dockerfile
+        image: theboysbot-image
+        container_name: theboysbot-container
+        restart: unless-stopped
+        env_file: .env
+        volumes:
+            - .:/home/node/theboysbot
+            - node_modules:/home/node/theboysbot/node_modules
+
+volumes:
+    node_modules:
