@@ -11,7 +11,7 @@ const client = new CommandoClient({
 client.registry
 	.registerDefaultTypes()
 	.registerGroups([
-		['pirate', 'Basic pirate commands'],
+		['translate', 'transalte your message'],
 		['lmgtfy', 'lmgtfy command'],
 		['test', 'test commands']
 	])

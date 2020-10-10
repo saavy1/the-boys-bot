@@ -7,7 +7,7 @@ module.exports = class PirateifyCommand extends Command {
 			name: 'pirate',
 			description: 'Pirate-ifys your message',
             examples: ['$pirate hello there',],
-            group: 'pirate',
+            group: 'translate',
             memberName: 'pirateify',
 			args: [
 				{
